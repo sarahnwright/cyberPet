@@ -1,0 +1,9 @@
+h1 {color: black;
+font-size: 50px;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+margin-top: 65px;}
+
+body {background: url(../cyberPet/parkScene.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;}
