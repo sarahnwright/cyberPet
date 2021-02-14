@@ -1,3 +1,15 @@
+function showPet (petImage){
+    let petImages = document.getElementsByClassName("petImage");
+    for(let i = 0; i < petImages.length; i++) {
+        if (petImages[i].id==petImage){
+            petImages[i].hidden = false
+        } else {
+            petImages[i].hidden = true
+        }
+    }
+}
+
+
 class cyberPet {
     constructor(name) {
         this.name = name; 
@@ -6,9 +18,9 @@ class cyberPet {
         this.tired = 50;
         this.happy = 50;
         this.bored = 50;
-    }
+    }}
 
-    feed() {
+function feed() {
         if (this.hunger > 10) {
             this.hunger = this.hunger - 10;
             this.thirst = this.thirst - 5;
@@ -20,3 +32,4 @@ class cyberPet {
             return `${this.name} is too full right now!`
         }
     }
+

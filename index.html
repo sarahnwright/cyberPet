@@ -4,26 +4,57 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="cyber.css">
         <title>Cyber Pet</title>
-        <script src="pets.js"></script>
     </head>
     <body>
-        <h1>Welcome to Cyper Pets!</h1>
-        <div id="newGame">Click below to start a new game!</div>
+        <h1>Welcome to Cyber Pets!</h1>
 
-        <div id="options">
-            <button id="newGame">New Game</button>
-            <button id="dog">Dog</button>
-            <button id="cat">Cat</button>
-            <button id="rabbit">Rabbit</button>
-            <button id="fish">Fish</button>
-            <button id="check">Check Pet</button>
+        <div class="container">
+            <!--LEFT Box-->
+            <div class="box box1">
+                            
+            <div id="newGame">Choose below to change your pet..</div>
+
+                <!--Pet Options-->
+                <div id="options">
+                    <p><button class="button" id="dog" onclick="showPet('dogImage')">Dog</button>
+                    <button class="button" id="cat" onclick="showPet('catImage')">Cat</button>
+                    <button class="button" id="monkey" onclick="showPet('monkeyImage')">Monkey</button>   
+                    <button class="button" id="koala" onclick="showPet('koalaImage')">Koala</button></p>    
+
+                <!--Game options-->
+                <p>Don't forget to look after your pet!</p>
+                    <button class="button" id="status">Status Levels</div>
+                    <p><button class="button" id="feed">Feed</button></p>
+    
+                <!--Check & Restart-->
+                    <p>What next?</p>
+                    <p><button class="button" id="check">Check Pet</button>
+                    <p><button class="button" id="restart">Restart</button></p>
+            </div>
+
+
+
+            <!--MIDDLE Box-->
+            <div class="box box2"> 
+                <!--Pet Images-->
+                <img id="dogImage" src="dog.png" class="petImage" alt="Dog" hidden/>
+                <img id="catImage" src="cat.png" class="petImage" alt="Cat" hidden/>
+                <img id="monkeyImage" src="monkey.png" class="petImage" alt="Monkey" hidden/>
+                <img id="koalaImage" src="koala.png" class="petImage" alt="Koala" hidden/>
+            </div>
+
+
+            <!--Right Box-->
+            <div class="box box3"></div>
         </div>
 
-        <div id="pet">Insert Pet</div>
-        <div id="status">Status Levels</div>
-        <div id="actions">
-            <button id="feed">Feed</button>
-        </div>
     </body>
-    <footer><a href="https://www.freepik.com/vectors/tree">Tree vector created by vectorpocket - www.freepik.com</a></footer>
+
+    <script src="pets.js"></script>
+
+    <div class="footer" id="footer">
+        <footer><a href="https://www.freepik.com/vectors/tree">Tree vector created by vectorpocket - www.freepik.com</a>
+             <a href=”https://www.jamiesale-cartoonist.com/free-cartoon-dog-vector-clip-art/”>Pet vectors created by Jamie Sale</a></footer>
+    </div>
+
 </html>

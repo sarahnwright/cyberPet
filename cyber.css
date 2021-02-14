@@ -1,9 +1,66 @@
-h1 {color: black;
-font-size: 50px;
-font-family: Arial, Helvetica, sans-serif;
-text-align: center;
-margin-top: 65px;}
+h1 {
+    color: black;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 65px;}
 
-body {background: url(../cyberPet/parkScene.jpg);
+body {
+    background: url(../cyberPet/parkScene.jpg);
     background-repeat: no-repeat;
-    background-size:cover;}
+    background-size:cover;
+    background-position: fixed;
+    ;
+}
+    
+*{box-sizing: border-box;}
+.box {
+    padding: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.box1 {
+    background-color: rgb(130, 206, 130) ; 
+    width: 270px;
+    height: 500px;
+}
+
+.box2 {
+    width: 600px;
+    margin-left: 250px;
+    margin-top: 150px;
+}
+
+.box3 {
+    width: 300px;
+}
+
+.container {
+    display:flex;
+    min-height: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: rgb(65, 46, 46);
+    font-weight: bold;
+}
+
+.petImage {
+    height: 300px;
+    width: 300px;
+}
+
+.footer a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: white;
+    position: bottom;
+}
+
+.button {
+    background-color: chartreuse;
+    font-family: arial;
+    font-size: 16px;
+    width: 120px;
+}
